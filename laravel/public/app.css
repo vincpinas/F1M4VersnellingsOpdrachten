@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap');
+
+*, *::before, *::after {
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+}
+
+:root {
+    --background: #1a202c;
+    --textcolor: rgb(224, 224, 224);
+    --lightwhite: rgb(255, 255, 255);
+    --hovercolor: rgb(255, 178, 34);
+    --lightborder: rgb(234, 234, 234);
+    --darkerborder: rgb(224, 224, 224);
+    --lightgray: rgb(173, 173, 173);
+    --specialcolor: orange;
+}
+
+a, button, input[type="submit"] {
+    text-decoration: none;
+    color: var(--specialcolor);
+}
+
+body, html, #root {
+    overflow-x: hidden;
+    height: 100%;
+    width: 100%;
+    background-color: var(--background);
+    color: var(--textcolor);
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+body {
+    justify-content: center;
+    align-items: center;
+}
+
+article {
+    width: 70%;
+    text-align: left;
+}
+
+h1 {
+    font-weight: normal;
+}
+
+article + article {
+    margin: 3rem 0 0 0;
+    padding: 3rem 0 0 0;
+    border-top: 1px solid var(--lightborder);
+}
+
+.post {
+    width: 100%;
+    line-height: 1.6;
+}
